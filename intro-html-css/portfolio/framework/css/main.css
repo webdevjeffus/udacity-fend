@@ -1,5 +1,5 @@
 * {
-  /*border: 1px solid red !important;*/
+  border: 1px solid red !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -38,6 +38,42 @@ header.page-header p {
   margin-top: 0;
 }
 
+header.section-header {
+  color: #bcbbbb;
+}
+
+header.section-header h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+  letter-spacing: .025em;
+}
+
+article.work-sample h3 {
+  color: #747704;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: .025em;
+  margin: 0 0;
+}
+
+article.work-sample p {
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0;
+}
+
+article.work-sample p a {
+  text-decoration: none;
+  color: #747704;
+}
+
+article.work-sample p a:hover,
+article.work-sample p a:active {
+  color: #F8981C;
+}
 
 .grid {
   max-width: 960px;
