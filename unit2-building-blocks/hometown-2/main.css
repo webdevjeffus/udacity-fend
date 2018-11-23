@@ -1,4 +1,11 @@
-body, 
+/*
+  Default styling is for mobile devices, <450px.
+  Styling for larger screens is contained in media queries following default styling.
+  Breakpoints are at 450px and 800px.
+*/
+
+
+body,
 html {
   margin: 0;
   padding: 0;
@@ -17,14 +24,14 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header,
-nav, 
-footer, 
-section, 
-article, 
+nav,
+footer,
+section,
+article,
 div {
   box-sizing: border-box;
 }
@@ -39,7 +46,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -59,6 +66,7 @@ ul {
 .header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
+  min-width: 320px;
   transition: min-height 0.3s;
 }
 
@@ -69,18 +77,28 @@ ul {
 }
 
 .header__logo {
+  display: none;
   height: 72px;
   margin-right: 1em;
   vertical-align: top;
   margin-top: 12px;
+  margin: 12px 1em 12px 0;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 4em;
-  margin: 0.5em 0.25em;
+  font-size: 2.25em;
+  margin: 0.5em 0 0.5em 0.5em;
   display: inline-block;
   color: #212121;
+}
+
+.header__nav-button {
+  float: right;
+  font-size: 1.75em;
+  color: #333;
+  text-decoration: none;
+  padding: 0.95em 1em 0.8em 1.5em;
 }
 
 
@@ -91,37 +109,9 @@ ul {
  */
 
 .nav {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  display: none;
 }
 
-.nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.nav__item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
-  text-align: center;
-  line-height: 24px;
-  padding: 24px;
-  text-transform: uppercase;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #616161;
-  padding: 1.5em;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-  color: #212121;
-}
 
 
 /*
@@ -133,6 +123,7 @@ ul {
 main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   width: 100%;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -232,7 +223,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
@@ -374,4 +365,78 @@ footer a {
   text-decoration: none;
   color: #333;
   padding: 1.5em;
+}
+
+
+/* Breakpoint: 450px ************************************************/
+
+@media screen and (min-width: 450px) {
+  body {
+    background-color: tan;
+  }
+
+  .header__logo {
+    display: inline-block;
+  }
+
+  .header__title {
+    font-size: 3em;
+    margin: 0.8em 0;
+  }
+
+  .header__nav-button {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav__list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__item {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: #616161;
+    padding: 1.5em;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+    color: #212121;
+  }
+
+
+}
+
+
+/* BREAKPOINT 800px ************************************************/
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: pink;
+  }
+
+  .header__title {
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+  }
+
+
 }
