@@ -49,6 +49,10 @@ ul {
   font-size: .8em;
   color: #333;
   text-decoration: none;
+
+  /* Added */
+  padding: 1em;
+  margin-top: -1em;
 }
 
 
@@ -121,16 +125,15 @@ ul {
   line-height: 24px;
   /*padding: 24px;*/
   text-transform: uppercase;
-
-  /* Added */
-  min-width: 60px;
-  min-height: 48px;
-  padding: 24px 0;
 }
 
 .nav a {
   text-decoration: none;
   color: #616161;
+
+  /* Added */
+  display: block;
+  padding: 2em;
 }
 
 .nav a:hover {
@@ -205,7 +208,7 @@ main {
 .top-news {
   /*float: right;*/
   /*width: 320px;*/
-  height: 300px;
+  /*height: 300px;*/
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
 
@@ -217,13 +220,16 @@ main {
 .news__title {
   font-weight: 300;
   border-bottom: 1px solid #E0E0E0;
-  line-height: 24px;
+  /*line-height: 24px;*/
   font-size: 16px;
+
+  /* Added */
+  padding: 1em 0;
 }
 
 .top-news__item {
   border-bottom: 1px solid #E0E0E0;
-  padding: 1em 0;
+  /*padding: 1em 0;*/
   line-height: 19.2px;
 }
 
@@ -238,6 +244,10 @@ main {
 .top-news__item a {
   text-decoration: none;
   color: #666;
+
+  /* Added */
+  display: inline-block;
+  padding: 1.5em 0;
 }
 
 .top-news__item a:hover,
@@ -253,7 +263,7 @@ main {
  */
 
 .scores {
-  width: 480px;
+  /*width: 480px;*/
   /*float: left;*/
   padding-top: 1em;
 
@@ -421,4 +431,8 @@ footer li {
 footer a {
   text-decoration: none;
   color: #333;
+
+  /* Added */
+  display: block;
+  padding: 1.5em;
 }
