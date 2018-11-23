@@ -1,8 +1,20 @@
+/*
+  Per assignment, CSS was edited to give the site minimal responsiveness. All content was formatted into a single column, and most major elements were adjusted to width 100%.
+
+  * No selectors were added or deleted from original file.
+  * No rules were deleted; unnecessary or obsolete rules in original file were commented out.
+  * New rules were added at the end of any affected rulesets, after an "Added" comment.
+*/
+
+
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+
+  /* Added */
+  max-width: 100%;
 }
 
 body {
@@ -12,7 +24,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -29,7 +41,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -50,12 +62,18 @@ ul {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   min-height: 56px;
   transition: min-height 0.3s;
+
+  /* Added */
+  max-width: 100%;
 }
 
 .header__inner {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+
+  /* Added */
+  max-width: 100%;
 }
 
 .header__logo {
@@ -84,6 +102,9 @@ ul {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+
+  /* Added */
+  max-width: 100%;
 }
 
 .nav__list {
@@ -98,8 +119,13 @@ ul {
   width: 24%;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
+  /*padding: 24px;*/
   text-transform: uppercase;
+
+  /* Added */
+  min-width: 60px;
+  min-height: 48px;
+  padding: 24px 0;
 }
 
 .nav a {
@@ -124,6 +150,9 @@ main {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+
+  /* Added */
+  max-width: 100%;
 }
 
 /*
@@ -133,6 +162,8 @@ main {
  */
 
 
+
+
 /*
  *
  * Hero
@@ -140,12 +171,16 @@ main {
  */
 
 .hero {
-  float: left;
-  width: 480px;
+  /*float: left;*/
+  /*width: 480px;*/
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
   height: 300px;
+
+  /* Added */
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero article {
@@ -168,11 +203,15 @@ main {
  */
 
 .top-news {
-  float: right;
-  width: 320px;
+  /*float: right;*/
+  /*width: 320px;*/
   height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+
+  /* Added */
+  width: 100%;
+  max-width: 100%;
 }
 
 .news__title {
@@ -215,8 +254,11 @@ main {
 
 .scores {
   width: 480px;
-  float: left;
+  /*float: left;*/
   padding-top: 1em;
+
+  /* Added */
+  width: 100%;
 }
 
 .scores__table {
@@ -226,7 +268,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
@@ -263,9 +305,12 @@ main {
  */
 
 .weather {
-  float: right;
+  /*float: right;*/
   width: 320px;
   padding: 1em;
+
+  /* Added */
+  width: 100%;
 }
 
 .weather__location {
@@ -301,6 +346,9 @@ main {
   display: inline-block;
   width: 20%;
   text-align: center;
+
+  /* Added */
+  max-width: 100px;
 }
 
 .weather__next__item span {
@@ -321,6 +369,10 @@ main {
 .recent-news {
   clear: both;
   padding: 1em;
+
+  /* Added */
+  width: 100%;
+  max-width: 100%;
 }
 
 .snippet {
