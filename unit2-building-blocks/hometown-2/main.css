@@ -1,0 +1,568 @@
+/*
+  Default styling is for mobile devices, <450px.
+  Styling for larger screens is contained in media queries following default styling.
+  Breakpoints are at 450px and 800px.
+*/
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+  background-color: rgb(240,240,240);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+header,
+nav,
+footer,
+section,
+article,
+div {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ *
+ * Common
+ *
+ */
+
+.container {
+  width: 100%;
+  background-color: white;
+}
+
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  min-width: 320px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  display: none;
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+  margin: 12px 1em 12px 0;
+}
+
+.header__title {
+  font-weight: 300;
+  font-size: 2.25em;
+  margin: 0.5em 0 0.5em 0.5em;
+  display: inline-block;
+  color: #212121;
+}
+
+.header__nav-button {
+  float: right;
+  font-size: 1.75em;
+  color: #333;
+  text-decoration: none;
+  padding: 0.95em 1em 0.8em 1.5em;
+}
+
+.nav-button-show {
+  display: inline-block;
+}
+
+.nav-button-hide {
+  display: none;
+}
+
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav-drawer.nav-drawer-hide {
+  display: none;
+}
+
+#nav-drawer.nav-drawer-show {
+  display: block;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  /*padding: 24px;*/
+  text-transform: uppercase;
+  font-size: 1.5em;
+  background-color: #e8e8e4;
+  border-bottom: 2px white solid;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em 0;
+  width: 100%;
+  display: block;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/dog.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+/*
+ *
+ * Top News
+ *
+ */
+
+.top-news {
+  height: 300px;
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+}
+
+.news__title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.top-news__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+}
+
+.top-news__item a:hover,
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Sport Scores
+ *
+ */
+
+.scores {
+  padding-top: 1em;
+}
+
+.scores__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scores__table th,
+.scores__table td {
+  padding: 1em;
+}
+
+.scores__table th {
+  color: #fff;
+  font-weight: 300;
+  background-color: #78909C;
+}
+
+.scores__table tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+.scores__table tr:nth-child(even) td {
+  background-color: #eceff1;
+}
+
+.scores__table td.winner {
+  font-weight: bold;
+}
+
+.scores__table td:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table td:nth-child(2),
+.scores__table td:nth-child(5) {
+  text-align: center;
+}
+
+/*
+ *
+ * Weather
+ *
+ */
+
+.weather {
+  padding: 1em;
+}
+
+.weather__location {
+  display: block;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.weather__desc {
+  display: block;
+  font-size: 1.2em;
+}
+
+.weather__today {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.weather__today__image {
+  vertical-align: middle
+}
+
+.weather__today__temp {
+  font-size: 3em;
+}
+
+.weather__today__deg {
+  font-size: 2em;
+  display: inline;
+}
+
+.weather__next__item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+.weather__next__item span {
+  display: block;
+}
+
+.weather__next__image {
+  width: 100%;
+}
+
+
+/*
+ *
+ * Recent News
+ *
+ */
+
+.recent-news {
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+footer li {
+  display: block;
+  width: 100%;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* Breakpoint: 450px ************************************************/
+
+@media screen and (min-width: 450px) {
+
+  .header__logo {
+    display: inline-block;
+  }
+
+  .header__title {
+    font-size: 3em;
+    margin: 0.8em 0;
+  }
+
+  /* Nav-button should never show on tablets & above */
+  .header__nav-button {
+    display: none;
+  }
+
+  /* Nav-drawer should always show on tablets & above */
+  #nav-drawer.nav-drawer-hide,
+  #nav-drawer.nav-drawer-show {
+    display: block;
+  }
+
+  .nav__item {
+    display: inline-block;
+    width: 24%;
+    border: none;
+    background-color: inherit;
+    font-size: 1.25em;
+  }
+
+  .nav a {
+    padding: 1em 0;
+  }
+
+  footer li {
+    display: inline-block;
+    width: auto;
+    padding: 1em 2em;
+    margin: 0 1em;
+  }
+
+}
+
+
+/* BREAKPOINT 660px ************************************************/
+
+@media screen and (min-width: 660px) {
+
+  .hero {
+    width: 60%;
+    order: 1;
+  }
+
+  .top-news {
+    width: 40%;
+    order: 2;
+  }
+
+  .box-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 3;
+  }
+
+  .scores {
+    width: 50%;
+    order: 1;
+    padding-right: 0.75em;
+  }
+
+  .weather {
+    width: 50%;
+    order: 2;
+    padding-left: 0.75em;
+  }
+
+  .recent-news {
+    width: 100%;
+    order: 4;
+  }
+
+}
+
+/* BREAKPOINT 960px ************************************************/
+
+@media screen and (min-width: 960px) {
+
+  .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__title {
+    font-size: 4em;
+    margin: 0.5em 0.25em;
+  }
+
+  .hero {
+    width: 60%;
+    order: 1;
+  }
+
+  .top-news {
+    width: 40%;
+    order: 2;
+  }
+
+  .box-data {
+    width: 40%;
+    order: 3;
+    padding-right: 0.75em;
+  }
+
+  .scores {
+    width: 100%;
+    order: 1;
+  }
+
+  .weather {
+    width: 100%;
+    order: 2;
+  }
+
+  .recent-news {
+    width: 60%;
+    order: 4;
+    padding-left: 0.75em;
+  }
+
+}
