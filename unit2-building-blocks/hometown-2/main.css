@@ -17,6 +17,7 @@ body {
   font-family: Roboto;
   font-size: 12px;
   color: #424242;
+  background-color: rgb(240,240,240);
 }
 
 h1,
@@ -34,6 +35,7 @@ section,
 article,
 div {
   box-sizing: border-box;
+  width: 100%;
 }
 
 ul {
@@ -48,6 +50,11 @@ ul {
  * Common
  *
  */
+
+.container {
+  width: 100%;
+  background-color: white;
+}
 
 .news__more {
   float: right;
@@ -183,6 +190,11 @@ main {
  * Content
  *
  */
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 /*
@@ -421,9 +433,6 @@ footer a {
 /* Breakpoint: 450px ************************************************/
 
 @media screen and (min-width: 450px) {
-  body {
-    background-color: tan;
-  }
 
   .header__logo {
     display: inline-block;
@@ -434,15 +443,15 @@ footer a {
     margin: 0.8em 0;
   }
 
+  /* Nav-button should never show on tablets & above */
   .header__nav-button {
     display: none;
   }
 
-  .nav {
+  /* Nav-drawer should always show on tablets & above */
+  #nav-drawer.nav-drawer-hide,
+  #nav-drawer.nav-drawer-show {
     display: block;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .nav__item {
@@ -457,6 +466,28 @@ footer a {
     padding: 1em 0;
   }
 
+  .hero {
+    width: 100%;
+    order: 1;
+  }
+
+  .top-news {
+    width: 100%;
+    order: 2;
+  }
+
+  .recent-news {
+    width: 40%;
+    order: 3;
+  }
+
+  .box-data {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    order: 4;
+
+  }
 
 
 }
@@ -465,8 +496,11 @@ footer a {
 /* BREAKPOINT 800px ************************************************/
 
 @media screen and (min-width: 800px) {
-  body {
-    background-color: pink;
+
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header__title {
@@ -474,5 +508,34 @@ footer a {
     margin: 0.5em 0.25em;
   }
 
+  .hero {
+    width: 60%;
+    order: 1;
+  }
+
+  .top-news {
+    width: 40%;
+    order: 2;
+  }
+
+  .box-data {
+    width: 100%;
+    order: 3;
+  }
+
+  .scores {
+    width: 40%;
+    order: 1;
+  }
+
+  .weather {
+    width: 60%;
+    order: 2;
+  }
+
+  .recent-news {
+    width: 100%;
+    order: 4;
+  }
 
 }
