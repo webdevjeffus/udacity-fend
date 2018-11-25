@@ -138,6 +138,14 @@
     font-size: 2.5em;
   }
 
+  .snippet {
+    min-height: 110px;
+  }
+
+  .snippet__thumbnail {
+    width: 160px;
+  }
+
 }
 
 
@@ -188,6 +196,15 @@
   .weather {
     order: 3;
   }
+
+  .snippet {
+    min-height: 160px;
+  }
+
+  .snippet__thumbnail {
+    width: 240px;
+  }
+
 }
 
 @media screen and (min-width: 850px) {
