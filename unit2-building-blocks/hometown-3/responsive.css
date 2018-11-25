@@ -207,6 +207,14 @@
 
 }
 
+@media screen and (min-width: 700px) and (max-width: 800px) {
+
+  .scores__location {
+    display: none;
+  }
+
+}
+
 @media screen and (min-width: 850px) {
   main, .header__inner, .nav, .content {
     width: 850px;
