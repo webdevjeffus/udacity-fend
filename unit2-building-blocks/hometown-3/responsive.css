@@ -64,7 +64,15 @@
     display: none;
   }
 
+  footer li {
+    display: block;
+    margin: auto;
+    border-bottom: 1px solid #eee;
+  }
 
+  footer a {
+    padding: 2em;
+  }
 
 }
 
