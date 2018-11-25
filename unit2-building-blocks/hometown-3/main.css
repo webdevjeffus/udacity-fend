@@ -7,12 +7,12 @@ body, html {
 
 body {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 16px;
   color: #424242;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -29,7 +29,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -168,7 +168,7 @@ main {
  */
 
 .top-news {
-  max-height: 300px;
+  /*max-height: 300px;*/
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
@@ -225,7 +225,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
