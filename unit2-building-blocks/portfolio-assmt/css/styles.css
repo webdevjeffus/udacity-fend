@@ -3,6 +3,42 @@
 /* Created by Jeff George                */
 /* Udacity FEND Nanodegree - March 2019  */
 
+* {
+  box-sizing: border-box;
+
+}
+
+body, html {
+  font-size: 12px;
+}
+
+
+/* Header Styles *************************/
+
 .header-logo {
   width: 75px;
 }
+
+
+
+
+/* Hero Styles **************************/
+
+section.hero {
+  width: 100%;
+  height: 17.5rem;
+  background-image: url("../img/papercuts-2017-web.jpg");
+  background-color: green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 10rem 1.5rem 1.5rem;
+}
+
+
+/* Projects Styles **********************/
+
+
+
+
