@@ -60,6 +60,14 @@
     font-size: 14px;
   }
 
+  .hero {
+    background-image: url("./images/dog-hero-550-1x.jpg");
+    background-image: -webkit-image-set(
+      url("./images/dog-hero-550-1x.jpg") 1x,
+      url("./images/dog-hero-550-2x.jpg") 2x
+    );
+  }
+
   .scores__location {
     display: none;
   }
@@ -91,6 +99,14 @@
 
   .hero {
     height: 360px;
+  }
+
+  .hero {
+    background-image: url("./images/dog-hero-400-1x.jpg");
+    background-image: -webkit-image-set(
+      url("./images/dog-hero-400-1x.jpg") 1x,
+      url("./images/dog-hero-400-2x.jpg") 2x
+    );
   }
 
   .contained_table {
@@ -184,7 +200,13 @@
 @media screen and (min-width: 700px) {
   .hero {
     width: 50%;
+    background-image: url("./images/dog-hero-550-1x.jpg");
+    background-image: -webkit-image-set(
+      url("./images/dog-hero-550-1x.jpg") 1x,
+      url("./images/dog-hero-550-2x.jpg") 2x
+    );
   }
+
   .top-news {
     order: 1;
     width: 50%;
@@ -198,7 +220,7 @@
   }
 
   .snippet {
-    min-height: 160px;
+    min-height: 180px;
   }
 
   .snippet__thumbnail {
