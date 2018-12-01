@@ -4,7 +4,7 @@
 /* Udacity FEND Nanodegree - March 2019     */
 
 
-/* Tablets - Major (401px to 550px ) ***/
+/* Phablets - Major (401px to 550px ) **/
 @media screen and (min-width: 401px) {
 
   html, body {
@@ -13,10 +13,6 @@
 
   /* Header */
 
-/*  header {
-    text-align: right;
-  }
-*/
   .header-logo {
     float: left;
     width: 60px;
@@ -37,9 +33,16 @@
     font-size: 1.2rem;
   }
 
+
+  /* Main */
+
+  section.hero {
+    text-align: left;
+    padding-top: 10rem;
+  }
 }
 
-/* Tablets - Minor (461px to 550px) ***/
+/* Phablets - Minor (461px to 550px) ***/
 @media screen and (min-width: 461px) {
 
   /* Header */
@@ -54,4 +57,53 @@
 
   header h1 { font-size: 2.1rem; }
   header p { font-size: 1.5rem; }
+
+
+  /* Main */
+
+  section.hero {
+    padding-top: 11rem;
+  }
+
+  article.blog-feature img {
+    width: 33%;
+  }
+}
+
+
+/* Tablets - Major (551px - 800px) */
+@media screen and (min-width: 551px) {
+
+  /* Main */
+
+  div.blog-feature-group {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+
+  article.blog-feature {
+    width: calc(50% - 1rem);
+    margin-right: 2rem;
+    border-top: 1px solid #593a1e;
+  }
+
+  article.blog-feature:last-of-type {
+    margin-right: 0;
+  }
+
+  article.blog-feature img {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Tablets - Minor (616px - 800px) ***/
+
+@media screen and (min-width: 616px) {
+
+  /* Main */
+  section.hero {
+    padding-top: 12.5rem;
+  }
 }

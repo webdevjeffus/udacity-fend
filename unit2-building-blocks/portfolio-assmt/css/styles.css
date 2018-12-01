@@ -90,7 +90,8 @@ section.hero {
   background-size: cover;
   color: #f9f6e8;
   text-shadow: #000 3px 3px 2px;
-  padding: 10rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
+  text-align: center;
 }
 
 section.hero h2 {
@@ -101,16 +102,21 @@ section.hero h2 {
 /* Projects Styles ***********************/
 
 section.projects {
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 article.project {
-  padding: 0.5rem 0;
+  padding: 1rem 0;
+}
+
+article.project h3 {
+  margin-bottom: 0.5rem;
 }
 
 article.project img {
   width: 100%;
   border: solid 1px #593a1e;
+  margin-bottom: 0.75rem;
 }
 
 
@@ -119,11 +125,7 @@ article.project img {
 section.blog {
   color: #593a1e;
   background-color: #d9c196;
-  padding: 1rem;
-}
-
-div.blog-feature-grp1 {
-  border-bottom: 1px solid #593a1e;
+  padding: 1.5rem;
 }
 
 p.blog-intro {
@@ -131,12 +133,14 @@ p.blog-intro {
 }
 
 article.blog-feature {
-  padding: 0.5rem 0;
   display: block;
-  border-bottom: 1px solid #593a1e;
+  border-top: 1px solid #593a1e;
+  padding: 0.75rem 0;
 }
-article.blog-feature:last-child {
-  border-bottom: none;
+
+article.blog-feature h3 {
+  font-size: 1.5rem;
+  margin: 0.25rem 0;
 }
 
 article.blog-feature img {
@@ -145,7 +149,6 @@ article.blog-feature img {
   float: left;
   margin-right: 1rem;
   margin-bottom: 0.5rem;
-
 }
 
 
