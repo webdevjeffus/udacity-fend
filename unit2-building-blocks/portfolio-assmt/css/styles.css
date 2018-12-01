@@ -122,6 +122,10 @@ section.blog {
   padding: 1rem;
 }
 
+div.blog-feature-grp1 {
+  border-bottom: 1px solid #593a1e;
+}
+
 p.blog-intro {
   margin-bottom: 1rem;
 }
