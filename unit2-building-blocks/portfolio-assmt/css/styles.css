@@ -46,7 +46,7 @@ header {
   color: #593a1e;
   background-color: #d9c196;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .header-logo {
@@ -92,6 +92,9 @@ section.hero {
   text-shadow: #000 3px 3px 2px;
   padding: 1rem 1.5rem 1.5rem;
   text-align: center;
+  border: #593a1e solid 4px;
+  border-right: none;
+  border-left: none; ;
 }
 
 section.hero h2 {
