@@ -2,3 +2,56 @@
 /* Unit 2 - Building Blocks of Front-End    */
 /* Created by Jeff George                   */
 /* Udacity FEND Nanodegree - March 2019     */
+
+
+/* Tablets - Major (401px to 550px ) ***/
+@media screen and (min-width: 401px) {
+
+  html, body {
+    font-size: 18px;
+  }
+
+  /* Header */
+
+/*  header {
+    text-align: right;
+  }
+*/
+  .header-logo {
+    float: left;
+    width: 60px;
+  }
+
+  header h1,
+  header p {
+    text-align: right;
+    float: right;
+    width: calc(100% - (1rem + 60px));
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+}
+
+/* Tablets - Minor (461px to 550px) ***/
+@media screen and (min-width: 461px) {
+
+  /* Header */
+  .header-logo {
+    width: 75px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 75px));
+  }
+
+  header h1 { font-size: 2.1rem; }
+  header p { font-size: 1.5rem; }
+}

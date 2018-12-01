@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Baloo, Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
 
 h1 { font-size: 3rem; }
@@ -30,6 +31,12 @@ h6 { font-size: 1rem; }
 
 p {
   font-family: Tinos, serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -103,6 +110,7 @@ article.project {
 
 article.project img {
   width: 100%;
+  border: solid 1px #593a1e;
 }
 
 
@@ -121,7 +129,7 @@ p.blog-intro {
 article.blog-feature {
   padding: 0.5rem 0;
   display: block;
-  border-bottom: 1px solid #593a1e;;
+  border-bottom: 1px solid #593a1e;
 }
 article.blog-feature:last-child {
   border-bottom: none;
