@@ -26,19 +26,28 @@
   }
 
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   header p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
 
   /* Main */
 
   section.hero {
-    text-align: left;
-    padding-top: 10rem;
+    /*text-align: left;*/
+    height: 403px;
+    background-image: url(../img/papercuts-2017-460.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-460.jpg) 1x,
+      url(../img/papercuts-2017-460x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-460.jpg) 1x,
+      url(../img/papercuts-2017-460x2.jpg) 2x
+    );
   }
 }
 
@@ -47,12 +56,12 @@
 
   /* Header */
   .header-logo {
-    width: 75px;
+    width: 65px;
   }
 
   header h1,
   header p {
-    width: calc(100% - (1rem + 75px));
+    width: calc(100% - (1rem + 65px));
   }
 
   header h1 { font-size: 2.1rem; }
@@ -62,7 +71,16 @@
   /* Main */
 
   section.hero {
-    padding-top: 11rem;
+    height: 442px;
+    background-image: url(../img/papercuts-2017-550.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-550.jpg) 1x,
+      url(../img/papercuts-2017-550x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-550.jpg) 1x,
+      url(../img/papercuts-2017-550x2.jpg) 2x
+    );
   }
 
   article.blog-feature img {
@@ -74,9 +92,57 @@
 /* Tablets - Major (551px - 960px) */
 @media screen and (min-width: 551px) {
 
+  html, body {
+    font-size: 20px;
+  }
+
+  /* Header */
+  .header-logo {
+    width: 75px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 75px));
+  }
+
+
   /* Main */
 
-  div.blog-feature-group {
+  section.hero {
+    height: 447px;
+    background-image: url(../img/papercuts-2017-615.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-615.jpg) 1x,
+      url(../img/papercuts-2017-615x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-615.jpg) 1x,
+      url(../img/papercuts-2017-615x2.jpg) 2x
+    );
+  }
+
+}
+
+/* Tablets - Minor (616px - 960px) ***/
+
+@media screen and (min-width: 616px) {
+
+  /* Main */
+  section.hero {
+    height: 412px;
+    background-image: url(../img/papercuts-2017-960.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-960.jpg) 1x,
+      url(../img/papercuts-2017-960x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-960.jpg) 1x,
+      url(../img/papercuts-2017-960x2.jpg) 2x
+    );
+  }
+
+    div.blog-feature-group {
     display: flex;
     flex-wrap: wrap;
     border-bottom: none;
@@ -96,16 +162,37 @@
     width: 100%;
     margin-right: 0;
   }
+
 }
 
-/* Tablets - Minor (616px - 960px) ***/
 
-@media screen and (min-width: 616px) {
+/* Tablets - 2nd Minor (720px - 960px) */
+
+@media screen and (min-width: 720px) {
+
+  html, body {
+    font-size: 24px;
+  }
+
+  /* Header */
+  .header-logo {
+    width: 90px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 100px));
+  }
 
   /* Main */
-  section.hero {
-    padding-top: 12.5rem;
+  section.hero h2 {
+    font-size: ;
   }
+
+  section.blog article{
+    font-size: 0.8em;
+  }
+
 }
 
 
@@ -134,8 +221,16 @@
 
   /* Main */
   section.hero {
-    height: 20rem;
-    padding: 15rem 3rem 2rem;
+    background-image: url(../img/papercuts-2017-1200.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-1200.jpg) 1x,
+      url(../img/papercuts-2017-1200x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-1200.jpg) 1x,
+      url(../img/papercuts-2017-1200x2.jpg) 2x
+    );
+
   }
 
   div.article-container {
@@ -151,6 +246,22 @@
     display: initial;
   }
 
+  section.blog {
+    width: 35%;
+  }
+
+  section.blog article {
+    font-size: 1em;
+  }
+
+  section.blog h2 {
+    font-size: 1.5rem;
+  }
+
+  section.blog h3 {
+    font-size: 1.2rem;
+  }
+
   article.blog-feature {
     width: 100%;
   }
@@ -159,10 +270,16 @@
     width: 50%;
     margin-right: 0.8rem;
   }
+}
 
-  section.blog {
-    width: 35%;
-    font-size: 0.8em;
+/* Desktop PC (1200px+) *********/
+@media screen and (min-width: 1201px) {
+
+  header,
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
 }
