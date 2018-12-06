@@ -4,7 +4,6 @@
 /* Udacity FEND Nanodegree - March 2019  */
 
 /* General Styles and Resets *************/
-
 * {
   box-sizing: border-box;
 }
@@ -41,8 +40,7 @@ p {
 }
 
 
-/* MASTHEAD STYLES*************************/
-
+/* MASTHEAD STYLES *************************/
 header {
   color: #593a1e;
   background-color: #d9c196;
@@ -50,7 +48,7 @@ header {
   padding: 1rem 1.5rem;
 }
 
-.header-logo {
+header img.logo {
   width: 75px;
 }
 
@@ -61,7 +59,6 @@ header p {
 
 
 /* MAIN CONTENT STYLES ********************/
-
 main {
   background-color: #f9f6e8;
   color: #593a1e;
@@ -80,7 +77,6 @@ main a:active {
 }
 
 /* Hero Styles ****************************/
-
 section.hero {
   width: 100%;
   position: relative;
@@ -116,7 +112,6 @@ section.hero h2 {
 
 
 /* Projects Styles ***********************/
-
 section.projects {
   padding: 1.5rem;
 }
@@ -137,7 +132,6 @@ article.project img {
 
 
 /* Blog Styles ***************************/
-
 section.blog {
   color: #593a1e;
   background-color: #d9c196;
@@ -169,7 +163,6 @@ article.blog-feature img {
 
 
 /* FOOTER STYLES *************************/
-
 footer {
   background-color: #593a1e;
   color: #d9c196;

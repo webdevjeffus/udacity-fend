@@ -4,7 +4,7 @@
 /* Udacity FEND Nanodegree - March 2019     */
 
 
-/* Phablets - Major (401px to 550px ) **/
+/* Phablets - Major (401px to 550px ) **********************/
 @media screen and (min-width: 401px) {
 
   html, body {
@@ -12,8 +12,7 @@
   }
 
   /* Header */
-
-  .header-logo {
+  header img.logo {
     float: left;
     width: 60px;
   }
@@ -35,9 +34,7 @@
 
 
   /* Main */
-
   section.hero {
-    /*text-align: left;*/
     height: 403px;
     background-image: url(../img/papercuts-2017-460.jpg);
     background-image: -webkit-image-set(
@@ -51,11 +48,12 @@
   }
 }
 
-/* Phablets - Minor (461px to 550px) ***/
+
+/* Phablets - Minor (461px to 550px) */
 @media screen and (min-width: 461px) {
 
   /* Header */
-  .header-logo {
+  header img.logo {
     width: 65px;
   }
 
@@ -69,7 +67,6 @@
 
 
   /* Main */
-
   section.hero {
     height: 442px;
     background-image: url(../img/papercuts-2017-550.jpg);
@@ -89,7 +86,7 @@
 }
 
 
-/* Tablets - Major (551px - 960px) */
+/* Tablets - Major (551px - 960px) *******************************/
 @media screen and (min-width: 551px) {
 
   html, body {
@@ -97,7 +94,7 @@
   }
 
   /* Header */
-  .header-logo {
+  header img.logo {
     width: 75px;
   }
 
@@ -108,7 +105,6 @@
 
 
   /* Main */
-
   section.hero {
     height: 447px;
     background-image: url(../img/papercuts-2017-615.jpg);
@@ -121,11 +117,9 @@
       url(../img/papercuts-2017-615x2.jpg) 2x
     );
   }
-
 }
 
-/* Tablets - Minor (616px - 960px) ***/
-
+/* Tablets - Minor (616px - 960px) */
 @media screen and (min-width: 616px) {
 
   /* Main */
@@ -162,12 +156,10 @@
     width: 100%;
     margin-right: 0;
   }
-
 }
 
 
 /* Tablets - 2nd Minor (721px - 960px) */
-
 @media screen and (min-width: 721px) {
 
   html, body {
@@ -175,7 +167,7 @@
   }
 
   /* Header */
-  .header-logo {
+  header img.logo {
     width: 90px;
   }
 
@@ -192,12 +184,10 @@
   section.blog article{
     font-size: 0.8em;
   }
-
 }
 
 
-/* PC Laptops (961px - 1200px) ***/
-
+/* Laptop PCs (961px - 1200px) ************************************/
 @media screen and (min-width: 961px) {
 
   html, body {
@@ -205,7 +195,7 @@
   }
 
   /* Header */
-  .header-logo {
+  header img.logo {
     width: 110px;
   }
 
@@ -230,7 +220,6 @@
       url(../img/papercuts-2017-1200.jpg) 1x,
       url(../img/papercuts-2017-1200x2.jpg) 2x
     );
-
   }
 
   div.article-container {
@@ -272,7 +261,7 @@
   }
 }
 
-/* Desktop PC (1200px+) *********/
+/* Desktop PC (1200px+) *****************************************/
 @media screen and (min-width: 1201px) {
 
   header,
@@ -281,5 +270,4 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-
 }
