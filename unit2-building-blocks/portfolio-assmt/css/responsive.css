@@ -166,9 +166,9 @@
 }
 
 
-/* Tablets - 2nd Minor (720px - 960px) */
+/* Tablets - 2nd Minor (721px - 960px) */
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 721px) {
 
   html, body {
     font-size: 24px;
@@ -198,7 +198,7 @@
 
 /* PC Laptops (961px - 1200px) ***/
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 961px) {
 
   html, body {
     font-size: 20px;
