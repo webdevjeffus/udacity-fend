@@ -40,7 +40,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="clearfix">
     <img class="header-logo" src="img/pnpg-icon-brown.png" alt="Print and Play Gamer icon">
     <h1>Jeff George</h1>
     <p>Print and Play Gamer</p>
@@ -51,53 +51,119 @@
       <h2>Jeff George has been playing, writing about, and creating tabletop games for decades.</h2>
     </section>
 
-    <section class="projects">
-      <h2>Tabletop Game Work</h2>
-      <article class="project">
-        <h4>Published work</h4>
-        <img src="./img/sj-games-work.jpg" alt="Deluxe Illuminati, AADA Mountain West Guide, GURPS Harkwood">
-        <p>In the 1980s, Jeff worked for Steve Jackson Games over several years, writing, illustrating, editing and developing dozens of games, books, and magazines. He also edited two editions of Hero Games' <em>Adventurers' Club</em> magazine before going to work on computer games with Chris Roberts and Origin Systems.</p>
-      </article>
-      <article class="project">
-        <h4>Independent designs</h4>
-        <img src="./img/indie-work.jpg" alt="Dungeons of Olde RPG, Cantrips">
-        <p>In recent years, Jeff has written independent roleplaying products, including <em>Cantrips</em>, a magical supplement for OSR games. He also works, off and on, on <em>Dungeons of Olde</em>, a stand-alone fantasy RPG; the <a href="dungeonsofolde.com" title="Dungeons of Olde RPG" target="_blank">in-development rules are available online</a> for free.</p>
-      </article>
-      <article class="project">
-        <h4>Cardstock miniatures and terrain</h4>
-        <img src="./img/cardstock-work.jpg" alt="Dungeons of Olde game terrain, Giant Toadstool and Imperfect Townsfolk cardstock minis">
-        <p>Jeff has also created or contributed to a variety of printable cardstock miniatures and terrain for tabletop gaming, including the Papercut-award-winning <em>Dungeons of Olde</em> modular dungeon terrain. Some of his work can be downloaded from the <a href="http://cardboard-warriors.proboards.com/" title="Cardboard Warriors paper miniatures wargaming forum" target="_blank">Cardboard Warriors</a> forum, but he now making it available through his own blog, <a href="https://printandplaygamer.com" title="Print and Play Gamer, covering PDF products for tabletop gaming" target="_blank">Print and Play Gamer</a>.</p>
-      </article>
-    </section>
+    <div class="article-container">
+      <section class="projects">
+        <h2>Tabletop Game Work</h2>
+        <article class="project">
+          <h3>Published work</h3>
+          <img src="./img/sj-games-work-1000.jpg"
+            srcset="
+              ./img/sj-games-work-500.jpg 500w,
+              ./img/sj-games-work-720.jpg 720w,
+              ./img/sj-games-work-900.jpg 900w,
+              ./img/sj-games-work-1000.jpg 1000w,
+              ./img/sj-games-work-1440.jpg 1440w,
+              ./img/sj-games-work-1800.jpg 1800w"
+            sizes="(max-width: 960px) 100vw,
+                  65vw"
+            alt="Deluxe Illuminati, AADA Mountain West Guide, GURPS Harkwood">
+          <p>In the 1980s, Jeff worked for Steve Jackson Games over several years, writing, illustrating, editing and developing dozens of games, books, and magazines. He also edited two editions of Hero Games' <em>Adventurers' Club</em> magazine before going to work on computer games with Chris Roberts and Origin Systems.</p>
+        </article>
+        <article class="project">
+          <h3>Independent designs</h3>
+          <img src="./img/indie-work-1000.jpg"
+            srcset="./img/indie-work-500.jpg 500w,
+                    ./img/indie-work-720.jpg 720w,
+                    ./img/indie-work-900.jpg 900w,
+                    ./img/indie-work-1000.jpg 1000w,
+                    ./img/indie-work-1440.jpg 1440,
+                    ./img/indie-work-1800.jpg 1800"
+            sizes="(max-width: 960px) 100vw,
+                  65vw"
+            alt="Dungeons of Olde RPG, Cantrips">
+          <p>In recent years, Jeff has written independent roleplaying products, including <em>Cantrips</em>, a magical supplement for OSR games. He also works, off and on, on <em>Dungeons of Olde</em>, a stand-alone fantasy RPG; the <a href="dungeonsofolde.com" title="Dungeons of Olde RPG" target="_blank">in-development rules are available online</a> for free.</p>
+        </article>
+        <article class="project">
+          <h3>Cardstock miniatures and terrain</h3>
+          <img src="./img/cardstock-work-1000.jpg"
+            srcset="./img/cardstock-work-500.jpg 500w,
+                    ./img/cardstock-work-720.jpg 720w,
+                    ./img/cardstock-work-900.jpg 900w,
+                    ./img/cardstock-work-1000.jpg 1000w,
+                    ./img/cardstock-work-1440.jpg 1440w,
+                    ./img/cardstock-work-1800.jpg 1800w"
+            sizes="(max-width: 960px) 100vw,
+                  65vw"
+            alt="Dungeons of Olde game terrain, Giant Toadstool and Imperfect Townsfolk cardstock minis">
+          <p>Jeff has also created or contributed to a variety of printable cardstock miniatures and terrain for tabletop gaming, including the Papercut-award-winning <em>Dungeons of Olde</em> modular dungeon terrain. Some of his work can be downloaded from the <a href="http://cardboard-warriors.proboards.com/" title="Cardboard Warriors paper miniatures wargaming forum" target="_blank">Cardboard Warriors</a> forum, but he now making it available through his own blog, <a href="https://printandplaygamer.com" title="Print and Play Gamer, covering PDF products for tabletop gaming" target="_blank">Print and Play Gamer</a>.</p>
+        </article>
+      </section>
 
-    <section class="blog">
-      <h2>Print and Play Gamer Blog</h2>
-      <p class="blog-intro">Recently, Jeff has begun to build <a href="https://printandplaygamer.com" title="Print and Play Gamer, covering PDF products for tabletop gaming" target="_blank">Print and Play Gamer</a>, a hobby blog covering the downloadable, printable side of the tabletop roleplaying and wargaming hobby.</p>
-      <article class="blog-feature">
-        <h4>Features</h4>
-        <img src="./img/blog-feature-720x540.jpg" alt="Trash Mobs Minis feature at PnPG">
-        <p>The blog has carried feature articles and reviews of RPG games, including <em>Dungeon World</em>, <em>Dungeon Crawl Classics</em> and <em>Beyond the Wall</em>, and OSR 'zines such as <em>Wormskin</em> and <em>Black Pudding</em>. It's also examined printable miniatures lines, like <em>Trash Mob Minis</em> and <em>Dave Graffam Games</em>, as well as battle reports for wargames like <em>Advanced Song of Blades and Heroes</em>.</p>
-      </article>
-      <article class="blog-feature">
-        <h4>Tutorials</h4>
-        <img src="./img/blog-tut-720x540.jpg" alt="How to Format Minis tutorial at PnPG">
-        <p>The PnPG blog also features maker tutorials, showing users how Jeff creates the printable miniatures and terrain he enjoys. Current tutorials focus on using GIMP to modify existing cardstock miniatures and format them in PDFs for convenient distribution and printing. Upcoming how-tos will demonstrate Jeff's methods for creating new miniatures from found images, as well as his assembly techniques for getting minis and terrain printed and assembled for play.</p>
-      </article>
-      <article class="blog-feature">
-        <h4>Resources</h4>
-        <img src="./img/blog-resources-720x540.jpg" alt="Recommended Resource: GIMP at PnPG">
-        <p>Jeff also reveals his favorite resources for papercraft gamers, including software and online miniature and game archives. Since print-and-play gamers tend to be cost-conscious DIYers, the blog emphasizes free tools and repositories. He also brings special offers and bundles on great products to gamers' attention.</p>
-      </article>
-      <article class="blog-feature">
-        <h4>Downloadable content</h4>
-        <img src="./img/blog-download-720x540.jpg" alt="Downloadable Toadstool minis at PnPG">
-        <p>The PnPG blog also includes an always-expanding of free, downloadable miniatures, terrain, and gaming accessories. Many of these are Jeff's original creations, but some were created by other talented artists and formatted by Jeff for easy, attractive printing. This curated collection of excellent minis is a great place for gamers new to printable miniatures to begin their print-and-play hobby.</p>
-      </article>
-    </section>
+      <section class="blog">
+        <h2>Print and Play Gamer Blog</h2>
+        <p class="blog-intro">Recently, Jeff has begun to build <a href="https://printandplaygamer.com" title="Print and Play Gamer, covering PDF products for tabletop gaming" target="_blank"><em>Print and Play Gamer</em></a>, a hobby blog covering the downloadable, printable side of the tabletop roleplaying and wargaming hobby.</p>
+        <div class="blog-feature-group blog-feature-grp1">
+          <article class="blog-feature clearfix">
+            <h3>Features</h3>
+            <img src="./img/blog-feature-790.jpg"
+              srcset="./img/blog-feature-200.jpg 200w,
+                      ./img/blog-feature-420.jpg 420w,
+                      ./img/blog-feature-790.jpg 790w"
+              sizes="(max-width: 460px) calc(50vw - 1.5rem),
+                     (max-width: 615px) calc(33vw - 1.5rem),
+                     (max-width: 960px) calc(50vw - 3rem),
+                     calc(17.5vw - 1.5rem)"
+              alt="Trash Mobs Minis feature at PnPG">
+            <p><em>Print and Play Gamer</em> carries feature articles and reviews of RPG games, including <em>Dungeon World</em>, <em>Dungeon Crawl Classics</em> and <em>Beyond the Wall</em>, and OSR 'zines such as <em>Wormskin</em> and <em>Black Pudding</em>. It's also examined printable miniatures lines, like <em>Trash Mob Minis</em> and <em>Dave Graffam Games</em>, as well as battle reports for wargames like <em>Advanced Song of Blades and Heroes</em>.</p>
+          </article>
+          <article class="blog-feature clearfix">
+            <h3>Tutorials</h3>
+            <img src="./img/blog-tut-720x540.jpg"
+              srcset="./img/blog-tut-200.jpg 200w,
+                      ./img/blog-tut-420.jpg 420w,
+                      ./img/blog-tut-770.jpg 770w"
+              sizes="(max-width: 460px) calc(50vw - 1.5rem),
+                     (max-width: 615px) calc(33vw - 1.5rem),
+                     (max-width: 960px) calc(50vw - 3rem),
+                     calc(17.5vw - 1.5rem)"
+              alt="How to Format Minis tutorial at PnPG">
+            <p>The PnPG blog also features tutorials showing readers how Jeff creates his printable miniatures and terrain. Current tutorials focus on using GIMP to modify existing cardstock miniatures and format them in PDFs. Upcoming how-tos will demonstrate Jeff's methods for creating new miniatures from found images, as well as techniques for getting minis and terrain printed and assembled for play.</p>
+          </article>
+        </div>
+        <div class="blog-feature-group blog-feature-grp2">
+          <article class="blog-feature clearfix">
+            <h3>Resources</h3>
+            <img src="./img/blog-resources-740.jpg"
+              srcset="./img/blog-resources-200.jpg 200w,
+                      ./img/blog-resources-420.jpg 420w,
+                      ./img/blog-resources-740.jpg 740w"
+              sizes="(max-width: 460px) calc(50vw - 1.5rem),
+                     (max-width: 615px) calc(33vw - 1.5rem),
+                     (max-width: 960px) calc(50vw - 3rem),
+                     calc(17.5vw - 1.5rem)"
+              alt="Recommended Resource: GIMP at PnPG">
+            <p>Jeff also shares his favorite resources for papercraft gamers, including software and online miniature and game archives. Since print-and-play gamers tend to be cost-conscious DIYers, the blog emphasizes free tools and repositories. He also brings special offers and bundles on great products to gamers' attention.</p>
+          </article>
+          <article class="blog-feature clearfix">
+            <h3>Downloads</h3>
+            <img src="./img/blog-download-720x540.jpg"
+              srcset="./img/blog-download-200.jpg 200w,
+                      ./img/blog-download-420.jpg 420w,
+                      ./img/blog-download-740.jpg 740w"
+              sizes="(max-width: 460px) calc(50vw - 1.5rem),
+                     (max-width: 615px) calc(33vw - 1.5rem),
+                     (max-width: 960px) calc(50vw - 3rem),
+                     calc(17.5vw - 1.5rem)"
+              alt="Downloadable Toadstool minis at PnPG">
+            <p>The PnPG blog also includes an ever-expanding roster of free, downloadable miniatures, terrain, and gaming accessories. Many of these are Jeff's original creations, but some were created by other talented artists. This curated collection is a great place for gamers new to printable miniatures to begin their print-and-play hobby.</p>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>Web page created by Jeff George<br>for the Udacity Front-End Development Nanodegree Program<br>November 2018</p>
+    <p>Web page created by Jeff George<br>for the Udacity Front-End Development Nanodegree Program<br>December 2018</p>
   </footer>
 
 </body>

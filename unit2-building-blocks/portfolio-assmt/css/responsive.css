@@ -2,3 +2,284 @@
 /* Unit 2 - Building Blocks of Front-End    */
 /* Created by Jeff George                   */
 /* Udacity FEND Nanodegree - March 2019     */
+
+
+/* Phablets - Major (401px to 550px ) **/
+@media screen and (min-width: 401px) {
+
+  html, body {
+    font-size: 18px;
+  }
+
+  /* Header */
+
+  .header-logo {
+    float: left;
+    width: 60px;
+  }
+
+  header h1,
+  header p {
+    text-align: right;
+    float: right;
+    width: calc(100% - (1rem + 60px));
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.4rem;
+  }
+
+
+  /* Main */
+
+  section.hero {
+    /*text-align: left;*/
+    height: 403px;
+    background-image: url(../img/papercuts-2017-460.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-460.jpg) 1x,
+      url(../img/papercuts-2017-460x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-460.jpg) 1x,
+      url(../img/papercuts-2017-460x2.jpg) 2x
+    );
+  }
+}
+
+/* Phablets - Minor (461px to 550px) ***/
+@media screen and (min-width: 461px) {
+
+  /* Header */
+  .header-logo {
+    width: 65px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 65px));
+  }
+
+  header h1 { font-size: 2.1rem; }
+  header p { font-size: 1.5rem; }
+
+
+  /* Main */
+
+  section.hero {
+    height: 442px;
+    background-image: url(../img/papercuts-2017-550.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-550.jpg) 1x,
+      url(../img/papercuts-2017-550x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-550.jpg) 1x,
+      url(../img/papercuts-2017-550x2.jpg) 2x
+    );
+  }
+
+  article.blog-feature img {
+    width: 33%;
+  }
+}
+
+
+/* Tablets - Major (551px - 960px) */
+@media screen and (min-width: 551px) {
+
+  html, body {
+    font-size: 20px;
+  }
+
+  /* Header */
+  .header-logo {
+    width: 75px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 75px));
+  }
+
+
+  /* Main */
+
+  section.hero {
+    height: 447px;
+    background-image: url(../img/papercuts-2017-615.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-615.jpg) 1x,
+      url(../img/papercuts-2017-615x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-615.jpg) 1x,
+      url(../img/papercuts-2017-615x2.jpg) 2x
+    );
+  }
+
+}
+
+/* Tablets - Minor (616px - 960px) ***/
+
+@media screen and (min-width: 616px) {
+
+  /* Main */
+  section.hero {
+    height: 412px;
+    background-image: url(../img/papercuts-2017-960.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-960.jpg) 1x,
+      url(../img/papercuts-2017-960x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-960.jpg) 1x,
+      url(../img/papercuts-2017-960x2.jpg) 2x
+    );
+  }
+
+    div.blog-feature-group {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+  }
+
+  article.blog-feature {
+    width: calc(50% - 1rem);
+    margin-right: 2rem;
+    border-top: 1px solid #593a1e;
+  }
+
+  article.blog-feature:last-of-type {
+    margin-right: 0;
+  }
+
+  article.blog-feature img {
+    width: 100%;
+    margin-right: 0;
+  }
+
+}
+
+
+/* Tablets - 2nd Minor (721px - 960px) */
+
+@media screen and (min-width: 721px) {
+
+  html, body {
+    font-size: 24px;
+  }
+
+  /* Header */
+  .header-logo {
+    width: 90px;
+  }
+
+  header h1,
+  header p {
+    width: calc(100% - (1rem + 100px));
+  }
+
+  /* Main */
+  section.hero h2 {
+    font-size: ;
+  }
+
+  section.blog article{
+    font-size: 0.8em;
+  }
+
+}
+
+
+/* PC Laptops (961px - 1200px) ***/
+
+@media screen and (min-width: 961px) {
+
+  html, body {
+    font-size: 20px;
+  }
+
+  /* Header */
+  .header-logo {
+    width: 110px;
+  }
+
+  header h1,
+  header p {
+    text-align: right;
+    float: right;
+    width: calc(100% - (1rem + 126px));
+  }
+
+  header h1 { font-size: 3rem; }
+  header p { font-size: 2.1rem; }
+
+  /* Main */
+  section.hero {
+    background-image: url(../img/papercuts-2017-1200.jpg);
+    background-image: -webkit-image-set(
+      url(../img/papercuts-2017-1200.jpg) 1x,
+      url(../img/papercuts-2017-1200x2.jpg) 2x
+    );
+    background-image: image-set(
+      url(../img/papercuts-2017-1200.jpg) 1x,
+      url(../img/papercuts-2017-1200x2.jpg) 2x
+    );
+
+  }
+
+  div.article-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section.projects {
+    width: 65%;
+  }
+
+  div.blog-feature-group {
+    display: initial;
+  }
+
+  section.blog {
+    width: 35%;
+  }
+
+  section.blog article {
+    font-size: 1em;
+  }
+
+  section.blog h2 {
+    font-size: 1.5rem;
+  }
+
+  section.blog h3 {
+    font-size: 1.2rem;
+  }
+
+  article.blog-feature {
+    width: 100%;
+  }
+
+  article.blog-feature img {
+    width: 50%;
+    margin-right: 0.8rem;
+  }
+}
+
+/* Desktop PC (1200px+) *********/
+@media screen and (min-width: 1201px) {
+
+  header,
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}
